@@ -24,9 +24,9 @@ app.get('/backup', async (req, res) => {
         // Realizar el respaldo a un archivo con el nombre formateado
         await mysqldump({
             connection: {
-                host: 'localhost',
-                user: 'root',
-                password: '',
+                host: 'sql941.main-hosting.eu',
+                user: 'u372482362_develop',
+                password: '%oU$Zt9;3U^F',
                 database: 'u372482362_bddevelop',
             },
             dumpToFile: rutaArchivo,
