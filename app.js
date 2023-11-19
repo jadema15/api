@@ -28,6 +28,7 @@ app.get('/backup', async (req, res) => {
                 user: 'u372482362_develop',
                 password: '%oU$Zt9;3U^F',
                 database: 'u372482362_bddevelop',
+                port: 3306,
             },
             dumpToFile: rutaArchivo,
         });
