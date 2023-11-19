@@ -35,7 +35,7 @@ app.get('/backup', async (req, res) => {
         res.send(`¡Hola, mundo! Respaldo completado en ${rutaArchivo}`);
     } catch (error) {
         console.error('Error al realizar el respaldo:', error);
-        res.status(500).send('Error al realizar el respaldo');
+        res.status(500).send('Error al realizar el respaldo.', error);
     }
 });
 
